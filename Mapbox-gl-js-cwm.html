@@ -3,6 +3,8 @@
 
 <head>
   <title>Studio Week 2</title>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
     <!-- Add Mapbox GL JS JavaScript file -->
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
     <!-- Add in the Mapbox GL JS CSS file -->
@@ -26,6 +28,18 @@
 
 <body>
   <h1>Studio Week 2 <br> Vector tiles with Mapbox GL JS </h1>
+
+      <div id='map' style='width: 400px; height: 300px;'></div>
+      <script>
+      mapboxgl.accessToken = 'pk.eyJ1Ijoiam0tZG93bCIsImEiOiJja25rc2VvOTMwYzF0MnZudjltMGh0dWpwIn0.-UcF1LG4oAox3A9YWUWs7w';
+      var map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v11', // style URL
+        center: [-74.5, 40], // starting position [lng, lat]
+        zoom: 9 // starting zoom
+      });
+      </script>
+
    <div id="mapId"></div><!-- Add multiple pages to web page-->
   <!-- active class displays the grey box around current page-->
   <ul>
