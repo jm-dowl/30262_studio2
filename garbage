@@ -1,0 +1,26 @@
+<ul>
+  <li><a href="index.html" target="_self">Output 1</a></li>
+  <li><a class="active" href="Mapbox-gl-js-cwm.html" target="_self">Output 2</a></li>
+  <li><a href="Mapbox-gl-js-ct.html" target="_self">Output 3</a></li>
+  <li><a href="Mapbox-gl-js-bm.html" target="_self">Output 4</a></li>
+</ul>
+<br>
+
+  <!-- Container for the map -->
+
+  <script>
+      // Mapbox GL JS requires a token
+      <script>
+// Mapbox GL JS requires a token
+mapboxgl.accessToken = 'pk.eyJ1Ijoiam0tZG93bCIsImEiOiJja25rc2VvOTMwYzF0MnZudjltMGh0dWpwIn0.-UcF1LG4oAox3A9YWUWs7w’;
+
+// Initialize the map
+
+</script>
+var map = new mapboxgl.Map({
+  container: 'mapId',
+  style: 'mapbox://styles/mapbox/streets-v11',
+  center: [-122.420790, 37.754700],
+  zoom: 14
+  });
+  </script>
