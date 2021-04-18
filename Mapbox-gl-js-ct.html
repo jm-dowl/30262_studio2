@@ -60,7 +60,7 @@ var popup = new mapboxgl.popup({ closeOnClick: false })
 var marker = new mapboxgl.Marker ({
     .setLngLat([-122.47, 37.8011])
     .addTo(map)
-    .setPopup(mapboxgl.Popup)
+    .setPopup(new mapboxgl.Popup().setHTML(<b>The Presidio.</b><br /> Explore to find a drinking fountain!)) // add popup
 }
 // code from the next step will go here!
 
