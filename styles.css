@@ -1,9 +1,10 @@
 ul {
+ font-family: monospace;
  list-style-type: none;
  margin: 1px;
  padding: 1px;
  overflow: hidden;
- background-color: white;
+ background-color: #ceabfa;
 }
 
 li {
