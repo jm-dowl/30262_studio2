@@ -15,6 +15,7 @@ font-family: monospace;
 
 /* Add a border to all( but not the last) list items */
 li:last-child {
+  font-family: monospace;
  border-right: none;
 }
 
@@ -29,9 +30,11 @@ font-family: monospace;
 
 /* Links will change color when hovered over */
 li a:hover {
+  font-family: monospace;
  background-color: #a09f9f;
 }
 
 .active {
+  font-family: monospace;
  background-color: #a09f9f;
 }
