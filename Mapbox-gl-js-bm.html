@@ -10,8 +10,7 @@
     <!-- Add styling info for the map -->
     <style>
          #mapId {
-      height: 400px;
-      width: 800px;
+      height: 600px
     }
     </style>
     <!-- Adding styling info for page layout by reading in a CSS file -->
@@ -19,14 +18,15 @@
 </head>
 
 <body>
-  <h1>Studio Week 2 <br> Custom Style with Mapbox GL JS </h1>
+  <div><h1>Studio Week 2</h1></div>
+  <div><h2>Custom Style with Mapbox GL JS</h2></div>
   <!-- Add multiple pages to web page-->
   <!-- active class displays the grey box around current page-->
   <ul>
-  	<li><a href="index.html" target="_self">Output 1</a></li>
-    <li><a href="Mapbox-gl-js-cwm.html" target="_self">Output 2</a></li>
-    <li><a href="Mapbox-gl-js-ct.html" target="_self">Output 3</a></li>
-    <li><a class="active" href="Mapbox-gl-js-bm.html" target="_self">Output 4</a></li>
+  	<li><a href="index.html" target="_self">Output 1</a>
+    <a href="Mapbox-gl-js-cwm.html" target="_self">Output 2</a>
+    <a href="Mapbox-gl-js-ct.html" target="_self">Output 3</a>
+    <a class="active" href="Mapbox-gl-js-bm.html" target="_self">Output 4</a></li>
   </ul>
   <br>
 
@@ -35,22 +35,24 @@
 
     <script>
     // Set your Mapbox access token
-    mapboxgl.accessToken = "";
+    mapboxgl.accessToken = 'pk.eyJ1Ijoiam0tZG93bCIsImEiOiJja25rc2VvOTMwYzF0MnZudjltMGh0dWpwIn0.-UcF1LG4oAox3A9YWUWs7w';
 
     /* The map variable stores a new mapbox gl map.
-    * map's center set to [-122.467, 37.798] with zoom 13. 
+    * map's center set to [-122.467, 37.798] with zoom 13.
     * Set the style URL to your custom style
     * Update the style with your custom style's Style URL.
     * See the Style URL'S reference for more info: https://docs.mapbox.com/help/glossary/style-url/
     */
     var map = new mapboxgl.Map({
-    center: [-122.467, 37.798],
-    zoom: 13,
-    style: "",
+    center: [-93.103450, 16.759423],
+    zoom: 10,
+    style: "mapbox://styles/jstrzempko/cknke28ck0gaa17n36p0ca5is",
     container: "mapId"
     });
-
     </script>
+    <div><p style="text-align: center;">Tuxtla Gutiérrez, Chiapas, MX</p></div>
+
+  
 
 </body>
 
