@@ -17,14 +17,14 @@
         #mapId {
         position: absolute;
         height: 600px;
-        width: 800px;
       }
     </style>
     <link rel="stylesheet" href="style.css"
 </head>
 
 <body>
-  <h1>Studio Week 2 <br> Marker and Popup with Mapbox GL JS map </h1>
+  <div><<h1>Studio Week 2 </h1><div>
+  <div><h2>Marker and Popup with Mapbox GL JS map </h2><div>
   <!-- Add multiple pages to web page-->
   <!-- active class displays the grey box around current page-->
   <ul>
@@ -36,29 +36,31 @@
   <br>
 
   <!-- Create a div to house the map -->
-  <div id='map'></div>
+  <div id='mapId'></div>
 
 <script>
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoiam0tZG93bCIsImEiOiJja25rc2VvOTMwYzF0MnZudjltMGh0dWpwIn0.-UcF1LG4oAox3A9YWUWs7w';
 
 var map = new mapboxgl.Map({
-  container: 'map',
+  container: 'mapId',
   style: 'mapbox://styles/mapbox/light-v10',
-  center: [-122.467, 37.8],
+  center: [-122.467, 37.798],
   zoom: 13
 });
 
-var popup = new mapboxgl.popup({ closeOnClick: false })
-    .setLngLat([-96, 37.8]),
-    .setHTML (<b>The Presidio.</b><br /> Explore to find a drinking fountain!)
-    .addTo(map);
+var popup = new mapboxgl.popup()
+    .setHTML (<b>The Presidio.</b><br /> Explore to find a drinking fountain!);
 
-var marker = new mapboxgl.Marker ({
+var marker = new mapboxgl.Marker ()
     .setLngLat([-122.47, 37.8011])
-    .addTo(map)
-    .setPopup(new mapboxgl.Popup().setHTML(<b>The Presidio.</b><br /> Explore to find a drinking fountain!)) // add popup
-}
+    .setPopup(popup)
+    .addTo (map);
+
+var marker1 = new mapbox1.marker()
+    .setLngLat ([12.554729, 55.70651])// add popup
+    .addTo (map);
+
 // code from the next step will go here!
 
 </script>
