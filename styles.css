@@ -8,6 +8,7 @@ ul {
 }
 
 li {
+font-family: monospace;
  float: left;
  border-right: 2px solid white;
 }
@@ -18,8 +19,9 @@ li:last-child {
 }
 
 li a {
+font-family: monospace;
  display: block;
- color: black;
+ color: #152eab;
  text-align: left;
  padding: 15px 17px;
  text-decoration: none;
